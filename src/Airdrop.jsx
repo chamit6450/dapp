@@ -31,14 +31,20 @@ function Airdrop() {
     };
 
     return (
-        <div>
-            <input
-                type='number' // Change to 'number' for better input handling
-                placeholder='Enter amount'
-                onChange={handleChange} 
-            />
-            <button onClick={sendAirdropToUser }>Send Airdrop</button>
-        </div>
+        <div className="flex items-center justify-center  border-teal-500 py-2 ">
+    <input
+        type='number'
+        placeholder='Enter amount'
+        onChange={handleChange} 
+        className=" border-none rounded-lg h-9 w-1/2 text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+    />
+    <button
+        className="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded"
+        onClick={sendAirdropToUser }
+    >
+        Send Airdrop
+    </button>
+</div>
     );
 }
 
